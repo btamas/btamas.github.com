@@ -1,10 +1,10 @@
 <html>
 	<head>
-		<script type="text/javascript" src="http://code.jquery.com/jquery-1.9.0.min.js" />
+		<script type="text/javascript" src="http://code.jquery.com/jquery-1.9.0.min.js"></script>
 		<script type="text/javascript">
 			$(document).ready(function(){
 				$("#create").click(function(){
-					$("#snapshot").attr("src", "http://static.brozie.com/snapshots/"+atoi($("#url").val())+"_"+$("#width").val()+"_"+$("#height").val()+".png" );
+					$("#snapshot").attr("src", "http://static.brozie.com/snapshots/"+btoa($("#url").val())+"_"+$("#width").val()+"_"+$("#height").val()+".jpg" );
 				});
 			});
 		</script>
