@@ -34,6 +34,10 @@
             height: 30px;
             top: 0px;
             left: 0px;
+
+            background: #000;
+            opacity: 0.5;
+            filter: alpha(opacity = 50); /* required for opacity to work in IE */
         }
 
 		@media print {
@@ -58,14 +62,8 @@
 
 </script>
 <script type="text/javascript" src="/jquery-1.10.1.min.js"></script>
-<script type="text/javascript" src="/blur.js"></script>
 <script type="text/javascript">
     $(function(){
-        $('#blurDiv').blurjs({
-            source: 'body',
-            radius: 7,
-            overlay: 'rgba(255,255,255,0.4)'
-        });
         $("#blurDiv").click(function(){
             $(this).animate({height: "700px"},1000);
         });
