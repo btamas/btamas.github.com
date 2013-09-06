@@ -35,9 +35,13 @@
             top: 0px;
             left: 0px;
 
-            background: #000;
+            background: #BBB;
             opacity: 0.5;
-            filter: alpha(opacity = 50); /* required for opacity to work in IE */
+            -webkit-filter: blur(2px);
+            -moz-filter: blur(2px);
+            -ms-filter: blur(2px);
+            -o-filter: blur(2px);
+            filter: blur(2px);
         }
 
 		@media print {
