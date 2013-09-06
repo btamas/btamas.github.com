@@ -28,22 +28,6 @@
         dd.clear { float: none; margin: 0; height: 15px; }
 		#menu { margin-left:100px;margin-top:30px;}
 
-        #blurDiv {
-            position: absolute;
-            width: 100%;
-            height: 30px;
-            top: 0px;
-            left: 0px;
-
-            background: #BBB;
-            opacity: 0.5;
-            -webkit-filter: blur(2px);
-            -moz-filter: blur(2px);
-            -ms-filter: blur(2px);
-            -o-filter: blur(2px);
-            filter: blur(2px);
-        }
-
 		@media print {
 			#menu {display:none;}
             .page-break  { display:block; page-break-before:always; }
@@ -64,15 +48,6 @@
     var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
   })();
 
-</script>
-<script type="text/javascript" src="/jquery-1.10.1.min.js"></script>
-<script type="text/javascript" src="/html2canvas.js"></script>
-<script type="text/javascript">
-    $(function(){
-        $("#blurDiv").click(function(){
-            $(this).animate({height: "700px"},1000);
-        });
-    });
 </script>
 </head>
 
@@ -232,7 +207,6 @@
 
 
     </div>
-    <div id="blurDiv"></div>
 </body>
 
 </html>
