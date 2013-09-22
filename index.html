@@ -1,209 +1,415 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
-"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+		<link rel="stylesheet" type="text/css" href="cv.css" />
+	</head>
+	<body>
+		<div class="header">Besenyei Tamás karrier idővonal</div>
+		
 
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+		<div class="container">
+			<img class="photo" src="tamasbesenyei.png" />
+			<div class="summary">
+				<p>
+					<span class="relevant">Email:</span> <a href="mailto:tamas@besenyei.net">tamas@besenyei.net</a><br />
+					<span class="relevant">Telefon:</span> +36 30 307-0132
+				</p>
+				<p>2012-ben szereztem meg a mérnök informatika BSc képzésre épülő műszaki menedzser MSc diplomámat, melyet párhuzamosan végeztem a 2011-ben befejezett mérnök informatika MSc-vel. Már az egyetem alatt részt vettem gyakornoki programokban, dolgoztam egy kisvállalkozásnál és több egyetemi kutatásban is részt vettem, így  tanulmányaim végeztével a tapasztalataimnak köszönhetően mindig könnyen találtam munkát. Pozitív, gyorsan tanuló és sikeres problémamegoldó embernek tartom magam, de könnyen észreveszem a hibát valamiben és ezt nem állom meg tudatni is. Szeretem ha a munkám gyümölcsét használják és fizikai fájdalmat okoz a silányul vagy összecsapottan elvégzett munka.</p>
+			</div>
+			<div class="clear"></div>
+			<div class="sectionTitle">Tanulmányok</div>
+			
+			<div class="lifeEvent purple">
+				<div class="eventDate">
+					<div>2010 -</div>
+					<div>2012&nbsp;&nbsp;</div>
+				</div>
+				<div class="eventData">
+					<div class="timelineDot"></div>
+					<div class="eventTitle">Menedzsment MSc</div>
+					<div class="eventPosition">Műszaki menedzser MSc</div>
+					<div class="eventDescription">(Budapesti Műszaki és Gazdaságtudományi Egyetem)</div>
+					<div class="clear"></div>
+					<div class="eventLongDescription">
+						<ul>
+							<li>Specializáció: Információ menedzsment</li>
+							<li>Diplomatéma: Mobil alkalmazásfejlesztés menedzsment</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<div class="lifeEvent blue">
+				<div class="eventDate">
+					<div>2009 -</div>
+					<div>2011&nbsp;&nbsp;</div>
+				</div>
+				<div class="eventData">
+					<div class="timelineDot"></div>
+					<div class="eventTitle">Mérnök informatikus MSc</div>
+					<div class="eventPosition">Mérnök informatikus MSc</div>
+					<div class="eventDescription">(Budapesti Műszaki és Gazdaságtudományi Egyetem)</div>
+					<div class="clear"></div>
+					<div class="eventLongDescription">
+						<ul>
+							<li>Specializáció: Információs rendszerek biztonsága</li>
+							<li>Diplomatéma: Web alapú steganogáfia analízis</li>
+							<li>A dolgozatommal megnyertem a Hétpecsét Egyesület "Év legjobb információvédelmi diplomadolgozata" díjat</li>
+							<li>Publikáció: StegoWeb: Towards the Ideal Private Web Content Publishing Tool</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<div class="lifeEvent blue">
+				<div class="eventDate">
+					<div>2005 -</div>
+					<div>2009&nbsp;&nbsp;</div>
+				</div>
+				<div class="eventData">
+					<div class="timelineDot"></div>
+					<div class="eventTitle">Mérnök informatika BSc</div>
+					<div class="eventPosition">Mérnök informatika BSc</div>
+					<div class="eventDescription">(Budapesti Műszaki és Gazdaságtudományi Egyetem)</div>
+					<div class="clear"></div>
+					<div class="eventLongDescription">
+						<ul>
+							<li>Specializáció: Infokommunikációs rendszerek</li>
+							<li>Diplomatéma: TNSDL forráskód modul és unit teszt lefedettségégenk elemzése (Nokia Siemens Networks)</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			
+			
+			<div class="sectionTitle">Munkahelyek és szakmai gyakorlatok</div>
+			
+			<div class="lifeEvent blue">
+				<div class="eventDate">
+					<div>Október 2012 -</div>
+				</div>
+				<div class="eventData">
+					<div class="timelineDot"></div>
+					<div class="eventTitle">Brozie Kft</div>
+					<div class="eventPosition">architekt és Node.js fejlesztő</div>
+					<div class="eventDescription"></div>
+					<div class="clear"></div>
+					<div class="eventLongDescription">
+						<p>A Brozie Kft egy startup közösségi oldal, mely az egy weboldalt egyszerre néző felhasználók között biztosít kommunikációs felületet. A cég a Docler Holding része.</p>
+						<p>Feladatom volt egy több mint 10 szerverből álló, <span class="relevant">Linux</span> operációsrendszert használó, webes rendszer tervezése, üzemeltetése és folyamatos fejlesztése. A munkám során a lent felsorolt minden rendszert használtam és fejlesztettem a PHP backend kivételével.</p>
+						<p>A Brozie weboldal <span class="relevant">PHP</span> nyelven készült, <span class="relevant">Apache2</span> webkiszolgálóval, <span class="relevant">MySQL és MongoDB</span> adatbázis szerverekkel, <span class="relevant">Redis</span> memóriatárolóval, <span class="relevant">HaProxy</span> forgalomirányítóval és egy <span class="relevant">Node.js</span>-ben írodott <span class="relevant">Engine.IO</span> alapú valós idejű chatkiszolgálóval. Az architektúra része volt továbbá egy saját fejlesztésű <span class="relevant">RabbitMQ</span> alapú késleltetett feladatvégrehajtó rendszer (jobqueue) valamint egy <span class="relevant">Jenkins</span> alapú <span class="relevant">Grunt</span> modult használó élesítő rendszer, mely feladata a kódot éles szerverre kihelyezése és a statikus tartalmak <span class="relevant">Amazon S3</span>-ra történő feltöltése volt. A rendszer része volt egy belső admin felület és egy monitorozó rendszer, mely <span class="relevant">Twitter Bootstrap</span> felülettel és <span class="relevant">Less</span> stílusnyelven Node.js-ben készítettem.</p>
+					</div>
+				</div>
+			</div>
+			<div class="lifeEvent blue">
+				<div class="eventDate">
+					<div>Szeptember 2011 -</div>
+				</div>
+				<div class="eventData">
+					<div class="timelineDot"></div>
+					<div class="eventTitle">CreApps Laboratory Kft</div>
+					<div class="eventPosition">tulajdonos, Node.js fejlesztő</div>
+					<div class="eventDescription"></div>
+					<div class="clear"></div>
+					<div class="eventLongDescription">
+						<p>A CreApps Laboratory egy web- és mobilfejlesztő cég. A céget két barátommal alapítottuk a CoDrinking nevű mobil startup ötletre. A startup sikere elmaradt, de mi készítettük egy Singapor-i székhelyű cég több éves webes projektjét. A CreApps több mobil alkalmazás fejlesztését is sikeresen elvégezte, mint például a Best of Budapest vagy az iMenetrend, mely Android és iOS környezetben is elérhető.</p>
+						<p>A munkám során fejlesztettem <span class="relevant">Node.js</span>-ben <span class="relevant">Express.js</span> keretrendszert használva weboldalt, mely <span class="relevant">Redis</span> memória tárolót és <span class="relevant">Amazon S3</span> CDN-t használt.</p>
+						<p>Mobil alkalmazás fejlesztéséhez a <span class="relevant">Titanium</span> keretrendszert használtam, mely képes ugyan azt a <span class="relevant">Javascript</span> kódot Android és IOS rendszerekre is lefordítani.</p>
+					</div>
+				</div>
+			</div>
+			<div class="lifeEvent purple">
+				<div class="eventDate">
+					<div>Augusztus 2012 -</div>
+					<div>Június 2013&nbsp;&nbsp;</div>
+					<div class="duration">( 11 hónap )</div>
+				</div>
+				<div class="eventData">
+					<div class="timelineDot"></div>
+					<div class="eventTitle">Lia Iskola</div>
+					<div class="eventPosition">informatika tanár</div>
+					<div class="eventDescription"></div>
+					<div class="clear"></div>
+					<div class="eventLongDescription">
+						<p>A Lia iskola Gödöllői székhelyén oktattam esti képzésben ECDL vizsga szintű informatika tananyagot. A képzés Word, Excel, PowerPoint, Access és HTML részekből állt.</p>
+						<p>A tananyag menetét én állítottam össze a követelményeknek megfelelően, és minden félév végén számítógépes és papír alapú vizsgát írattam a hallgatókkal.</p>
+					</div>
+				</div>
+			</div>
+			<div class="lifeEvent green">
+				<div class="eventDate">
+					<div>Augusztus 2012 -</div>
+					<div>Október 2012&nbsp;&nbsp;</div>
+					<div class="duration">( 3 hónap )</div>
+				</div>
+				<div class="eventData">
+					<div class="timelineDot"></div>
+					<div class="eventTitle">Bitnet.hu Kft</div>
+					<div class="eventPosition">web- és mobilalkalmazás fejlesztő</div>
+					<div class="eventDescription"></div>
+					<div class="clear"></div>
+					<div class="eventLongDescription">
+						<p>A Bitnet.hu informatikai kisvállalkozás mobil- és webalkalmazások fejlesztésével foglalkozik.</p>
+						<p>A cégnél két projekt fejlesztésében vettem részt. Az egyik egy Newsonia nevű <span class="relevant">Django</span> python keretrendszerben készült weboldal, míg a másik egy <span class="relevant">Titanium</span> keretrendszerben készült mobil alkalmazás.</p>
+					</div>
+				</div>
+			</div>
+			<div class="lifeEvent purple">
+				<div class="eventDate">
+					<div>Július 2012 -</div>
+					<div>Október 2012&nbsp;&nbsp;</div>
+					<div class="duration">( 4 hónap )</div>
+				</div>
+				<div class="eventData">
+					<div class="timelineDot"></div>
+					<div class="eventTitle">Schönherz Iskolaszövetkezet</div>
+					<div class="eventPosition">fejlesztési konzultáns</div>
+					<div class="eventDescription"></div>
+					<div class="clear"></div>
+					<div class="eventLongDescription">
+						<p>Az iskolaszövetkezet egy képzési rendszer kidolgozását tűzte ki célul, mely során a fiatal egyetemistákat képzési szerződés keretében kiképzik mobil fejlesztésre.</p>
+						<p>Feladatom egy tananyag kidolgozása volt, melyből a diákok megtanulhatták a <span class="relevant">Titanium</span> keretrendszert, valamint a tanulási folyamat során konzultációs lehetőséget kellett biztosítanom és probléma esetén segítenem őket.</p>
+					</div>
+				</div>
+			</div>
+			<div class="lifeEvent red">
+				<div class="eventDate">
+					<div>Február 2012 -</div>
+					<div>Június 2012&nbsp;&nbsp;</div>
+					<div class="duration">( 5 hónap )</div>
+				</div>
+				<div class="eventData">
+					<div class="timelineDot"></div>
+					<div class="eventTitle">Magyar Telekom</div>
+					<div class="eventPosition">gyakornok az IT architektúra fejlesztési osztályon</div>
+					<div class="eventDescription"></div>
+					<div class="clear"></div>
+					<div class="eventLongDescription">
+						<p>Résztvettem a Magyar Telekom gyakornoki programjában az egyetemi tanulmányaim befejeztéig. Feladatom az osztály belső rendszereit monitorozó rendszernek a tervezése és fejlesztése.</p>
+						<p>A munkám során <span class="relevant">PHP</span> nyelven fejlesztettem egy monitorozó weboldalt, mely <span class="relevant">DB2</span> IBM adatbázist használt. A szerverek adatait <span class="relevant">bash</span> scriptek szolgáltatták a rendszernek.</p>
+					</div>
+				</div>
+			</div>
+			<div class="lifeEvent green">
+				<div class="eventDate">
+					<div>Október 2011 -</div>
+					<div>Július 2012&nbsp;&nbsp;</div>
+					<div class="duration">( 10 hónap )</div>
+				</div>
+				<div class="eventData">
+					<div class="timelineDot"></div>
+					<div class="eventTitle">SubsystemsTrading Kft</div>
+					<div class="eventPosition">Linux rendszeradminisztrátor</div>
+					<div class="eventDescription"></div>
+					<div class="clear"></div>
+					<div class="eventLongDescription">
+						<p>A SubsystemsTrading Kft egy kisvállalkozás, mely az ország több pontján levő ügyfelének szolgáltat informatikai megoldásokat.</p>
+						<p>A cég az ügyfeleinek <span class="relevant">Linux</span> operációs rendszert használó szerver és kliens gépeket szolgáltatott. A kliens gépek karbantartása és az esetlegesen felmerülő hardver és szoftver problémák elhárítása volt a feladatom.</p>
+					</div>
+				</div>
+			</div>
+			<div class="lifeEvent red">
+				<div class="eventDate">
+					<div>Június 2010 -</div>
+					<div>Augusztus 2010&nbsp;&nbsp;</div>
+					<div class="duration">( 2 hónap )</div>
+				</div>
+				<div class="eventData">
+					<div class="timelineDot"></div>
+					<div class="eventTitle">NETvisor Informatikai és Kommunikációs Zrt</div>
+					<div class="eventPosition">Perl fejlesztő, gyakornok</div>
+					<div class="eventDescription"></div>
+					<div class="clear"></div>
+					<div class="eventLongDescription">
+						<p>A mérnök informatika képzésem keretében kötelező gyakorlatot végeztem a NETvisor Zrt-nél</p>
+						<p>Feladatom egy modul fejlesztése volt egy már működő monitorozó rendszerhez. A modul feladata a weboldalak működési állapotát, és a tesztek futásának sikerességét ellenőrizte. A modult <span class="relevant">Perl</span> nyelven fejlesztettem egy <span class="relevant">Linux</span> operációsrendszert futtató szerverre.</p>
+					</div>
+				</div>
+			</div>
+			<div class="lifeEvent green">
+				<div class="eventDate">
+					<div>Június 2008 -</div>
+					<div>Május 2010&nbsp;&nbsp;</div>
+					<div class="duration">( 2 év )</div>
+				</div>
+				<div class="eventData">
+					<div class="timelineDot"></div>
+					<div class="eventTitle">Cam-el-com Kft</div>
+					<div class="eventPosition">Perl fejlesztő és rendszeradminisztrátor</div>
+					<div class="eventDescription"></div>
+					<div class="clear"></div>
+					<div class="eventLongDescription">
+						<p>A Cam-el-com Kft egy informatikai kisvállalkozás, mely egyedi megrendelések alapján készít webes rendszereket és informatikai megoldásokat. Fő terméke a Webflow Dental fogászati praxismenedzsment rendszer.</p>
+						<p>A Webflow rendszert <span class="relevant">Perl</span> nyelven fejlesztettük <span class="relevant">Linux</span>-ot futtató szerverekre. Feladatom során készítettem SMS átjárót, webrádiót kezelő rendszert, kiosk gépeket helyeztem üzembe, továbbá az ügyfelekkel is kapcsolatot tartottam. A fejlesztésen kívül többször végeztem kábelezési és hardveres munkákat.</p>
+					</div>
+				</div>
+			</div>
+			<div class="lifeEvent red">
+				<div class="eventDate">
+					<div>Február 2009 -</div>
+					<div>Június 2009&nbsp;&nbsp;</div>
+					<div class="duration">( 5 hónap )</div>
+				</div>
+				<div class="eventData">
+					<div class="timelineDot"></div>
+					<div class="eventTitle">Nokia Siemens Networks</div>
+					<div class="eventPosition">gyakornok</div>
+					<div class="eventDescription"></div>
+					<div class="clear"></div>
+					<div class="eventLongDescription">
+						<p>A Nokia Siemens Networks szoros kapcsolatban volt a BME híradástechnikai tanszékével, így a kötelező gyakornoki programot itt végeztem.</p>
+						<p>Feladatom és egyben a szakdolgozat témám is a TNSDL nyelvben készült kapcsolóközpont szoftver teszt lefedetség mérése. Erre egy <span class="relevant">Perl</span>-ben készült mérőrendszert készítettem, mely több folyamatot <span class="relevant">bash</span> scriptekkel vezérelt.
+					</div>
+				</div>
+			</div>
+		
 
-<head>
-     <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+			<div class="sectionTitle">Szakértelem</div>
 
-     <title>Besenyei Tamás</title>
+			<div class="lifeEvent blue">
+				<div class="eventDate">
+					<div>(erős haladó)&nbsp;&nbsp;</div>
+					<div class="duration">( ~4 év )</div>
+				</div>
+				<div class="eventData">
+					<div class="timelineDot"></div>
+					<div class="eventTitle">Javascript</div>
+					<div class="eventPosition">Node.js, jQuery</div>
+					<div class="eventDescription"></div>
+					<div class="clear"></div>
+					<div class="eventLongDescription">
+					</div>
+				</div>
+			</div>
+			<div class="lifeEvent red">
+				<div class="eventDate">
+					<div>(erős haladó)&nbsp;&nbsp;</div>
+					<div class="duration">( 7 év )</div>
+				</div>
+				<div class="eventData">
+					<div class="timelineDot"></div>
+					<div class="eventTitle">Linux</div>
+					<div class="eventPosition">Debian, Ubuntu és CentOS</div>
+					<div class="eventDescription"></div>
+					<div class="clear"></div>
+					<div class="eventLongDescription">
+						<p>Telepítettem már linuxot szerver gépre RAID használatával. Készítettem visszaállítást biztonsági mentésből, munkahelyemen kívül is több linux rendszert tartok karban, köztük a saját személyi számítógépemet is.</p>
+					</div>
+				</div>
+			</div>
+			<div class="lifeEvent blue">
+				<div class="eventDate">
+					<div>(haladó)&nbsp;&nbsp;</div>
+					<div class="duration">( 3 év )</div>
+				</div>
+				<div class="eventData">
+					<div class="timelineDot"></div>
+					<div class="eventTitle">Perl</div>
+					<div class="eventPosition">Weboldal motor fejlesztés, háttér eszközök</div>
+					<div class="eventDescription"></div>
+					<div class="clear"></div>
+					<div class="eventLongDescription">
+					</div>
+				</div>
+			</div>
+			<div class="lifeEvent purple">
+				<div class="eventDate">
+					<div>(haladó)&nbsp;&nbsp;</div>
+					<div class="duration">( ~2 év )</div>
+				</div>
+				<div class="eventData">
+					<div class="timelineDot"></div>
+					<div class="eventTitle">Webes frontend</div>
+					<div class="eventPosition">Sitebuild, CSS/Less, jQuery</div>
+					<div class="eventDescription"></div>
+					<div class="clear"></div>
+					<div class="eventLongDescription">
+						<p>Munkám során napi szinten módosítok és készítek nulláról webes felületeket vagy facebook alkalmazásokat sikeresen.</p>
+					</div>
+				</div>
+			</div>
+			<div class="lifeEvent green">
+				<div class="eventDate">
+					<div>(haladó)&nbsp;&nbsp;</div>
+					<div class="duration">(6 hónap)</div>
+				</div>
+				<div class="eventData">
+					<div class="timelineDot"></div>
+					<div class="eventTitle">Titanium</div>
+					<div class="eventPosition">Titanium keretrendszer (Android és iOS)</div>
+					<div class="eventDescription"></div>
+					<div class="clear"></div>
+					<div class="eventLongDescription">
+					</div>
+				</div>
+			</div>
+			<div class="lifeEvent green">
+				<div class="eventDate">
+					<div>(középhaladó)&nbsp;&nbsp;</div>
+					<div class="duration">(3 hónap)</div>
+				</div>
+				<div class="eventData">
+					<div class="timelineDot"></div>
+					<div class="eventTitle">Python</div>
+					<div class="eventPosition">Django keretrendszer</div>
+					<div class="eventDescription"></div>
+					<div class="clear"></div>
+					<div class="eventLongDescription">
+					</div>
+				</div>
+			</div>
 
-     <style type="text/css">
-        * { margin: 0; padding: 0; }
-        body { font: 16px Helvetica, Sans-Serif; line-height: 24px; }
-        .clear { clear: both; }
-        #page-wrap { width: 900px; margin: 40px auto 60px; }
-        #pic { float: right; margin: 0px 0 0 0; }
-        h1 { margin: 0 0 16px 0; padding: 20px 0 16px 0; font-size: 42px; font-weight: bold; letter-spacing: -2px; border-bottom: 1px solid #999; }
-        h2 { font-size: 20px; margin: 20px 0 6px 0; position: relative; }
-        h2 span { position: absolute; bottom: 0; right: 0; font-style: italic; font-family: Georgia, Serif; font-size: 16px; color: #999; font-weight: normal; }
-        p { margin: 0 0 16px 0; }
-        a { color: #999; text-decoration: none; border-bottom: 1px dotted #999; }
-        a:hover { border-bottom-style: solid; color: black; }
-        ul { margin: 0 0 32px 17px; }
-        #objective { width: 500px; float: left; }
-        #objective p { font-family: Georgia, Serif; font-style: italic; color: #666; }
-        dt { font-style: italic; font-weight: bold; font-size: 18px; text-align: right; padding: 0 26px 0 0; width: 150px; float: left; height: 100px; border-right: 1px solid #999;  }
-        dd { width: 700px; float: right; }
-        dd.clear { float: none; margin: 0; height: 15px; }
-		#menu { margin-left:100px;margin-top:30px;}
+			<div class="sectionTitle">Hobbi</div>
 
-		@media print {
-			#menu {display:none;}
-            .page-break  { display:block; page-break-before:always; }
-		}
+			<div class="lifeEvent blue">
+				<div class="eventDate">
+					<div>(erős haladó)&nbsp;&nbsp;</div>
+					<div class="duration">( ~3 év )</div>
+				</div>
+				<div class="eventData">
+					<div class="timelineDot"></div>
+					<div class="eventTitle">Gokart</div>
+					<div class="eventPosition">8 perces futamok</div>
+					<div class="eventDescription"></div>
+					<div class="clear"></div>
+					<div class="eventLongDescription">
+						<p>Negyedévente házi bajnoságokat szoktunk szerverzi, melyen szinte mindig a dobogó tetején végzek.</p>
+					</div>
+				</div>
+			</div>
+			<div class="lifeEvent red">
+				<div class="eventDate">
+					<div>(kezdő)&nbsp;&nbsp;</div>
+					<div class="duration">( ~10 év )</div>
+				</div>
+				<div class="eventData">
+					<div class="timelineDot"></div>
+					<div class="eventTitle">Kütyük</div>
+					<div class="eventPosition">Hobbi eszközök építése</div>
+					<div class="eventDescription"></div>
+					<div class="clear"></div>
+					<div class="eventLongDescription">
+						<p>Szinte mindig építek valamit. Aktuális projektem egy HD kamerával ellátott 4 rotoros drone (quadrocopter), mely képes 20-50 méteres magasságból felvételeket készíteni.</p>
+					</div>
+				</div>
+			</div>
+			<div class="lifeEvent blue">
+				<div class="eventDate">
+					<div>(kezdő)&nbsp;&nbsp;</div>
+					<div class="duration">( ~2 év )</div>
+				</div>
+				<div class="eventData">
+					<div class="timelineDot"></div>
+					<div class="eventTitle">Foci</div>
+					<div class="eventPosition">Kispályás</div>
+					<div class="eventDescription"></div>
+					<div class="clear"></div>
+					<div class="eventLongDescription">
+						<p>Céges bajnokságban többször indultunk, és a nyári időszakban havonta többször lejárunk a pályára.</p>
+					</div>
+				</div>
+			</div>
+		</div>
 
-
-     </style>
-
-     <script type="text/javascript">
-
-  var _gaq = _gaq || [];
-  _gaq.push(['_setAccount', 'UA-37503700-1']);
-  _gaq.push(['_trackPageview']);
-
-  (function() {
-    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-  })();
-
-</script>
-</head>
-
-<body>
-
-	<div id="menu">
-		<a href="/en">English</a>
-	</div>
-    <div id="page-wrap">
-
-        <img src="images/tamasbesenyei.png" alt="Besenyei Tamás" id="pic" height="250px"/>
-
-        <div id="contact-info" class="vcard">
-
-            <!-- Microformats! -->
-
-            <h1 class="fn">Besenyei Tamás</h1>
-
-            <p>
-                Telefon: <span class="tel">30/307-0132</span><br />
-                Email: <a class="email" href="mailto:tamas@besenyei.net">tamas@besenyei.net</a>
-            </p>
-        </div>
-
-        <div id="objective">
-
-        </div>
-
-        <div class="clear"></div>
-
-        <dl>
-            <dd class="clear"></dd>
-
-            <dt style="height:520px">Tanulmányok</dt>
-            <dd>
-				<h2>műszaki menedzser MSc képzés, Budapesti Műszaki és Gazdaságtudományi Egyetem <span>( 2010. szeptember - 2012. június )</span></h2>
-                <ul>
-					<li>Szakirány: információ menedzsment</li>
-					<li>Diplomatéma: Informatikai rendszerfejlesztés mobil platformon</li>
-				</ul>
-                <h2>mérnök informatikus MSc képzés, Budapesti Műszaki és Gazdaságtudományi Egyetem <span>( 2009. szeptember - 2011. június )</span></h2>
-                <ul>
-					<li>Szakirány: hírközlő rendszerek biztonsága</li>
-					<li>Diplomatéma: Webes tartalmakban alkalmazható szteganográfiai módszerek vizsgálata</li>
-					<li>A dolgozatommal megnyertem a Hétpecsét Egyesület által meghirdetett pályázaton, az "Év legjobb információvédelmi diplomadolgozata" díjat</li>
-					<li>Publikáció: StegoWeb: Towards the Ideal Private Web Content Publishing Tool</li>
-				</ul>
-				<h2>mérnök informatikus BSc képzés, Budapesti Műszaki és Gazdaságtudományi Egyetem <span>( 2005. szeptember - 2009. június )</span></h2>
-                <ul>
-					<li>Szakirány: mobil infokommunikációs rendszerek</li>
-					<li>Diplomatéma: TNSDL nyelv coverage mérése modul és unit tesztek segítségével (Nokia Siemens Networks)</li>
-				</ul>
-            </dd>
-
-            <dd class="clear"></dd>
-
-            <dt style="height:660px">Munkahelyek, szakmai gyakorlatok</dt>
-            <dd>
-                <h2>Brozie Kft (Docler Holding)<span>( 2012. október - )</span></h2>
-                <ul>
-                    <li>Beosztás: nodejs fejlesztő, architekt</li>
-                    <li>Feladat: háttér rendszerek tervezése és megvalósítása</li>
-                </ul>
-
-            	<h2>CreApps Laboratory Kft. <span>( 2011. szeptember - )</span></h2>
-				<ul>
-					<li>Beosztás: tulajdonos, fejlesztő</li>
-					<li>Feladat: alkalmazásfejlesztés Android és iPhone platformra, webfejlesztés</li>
-				</ul>
-
-            	<h2>Magyar Telekom Nyrt. <span>( 2012. február - 2012. június)</span></h2>
-				<ul>
-					<li>Beosztás: gyakornok, az IT architektura fejlesztési osztályon</li>
-					<li>Feladat: rendszer adatok elemzése és IT támogatás</li>
-				</ul>
-
-                <h2>NETvisor Informatikai és Kommunikációs Zrt. <span>( 2010. július - 2010. augusztus)</span></h2>
-				<ul>
-					<li>Beosztás: fejlesztő</li>
-					<li>Feladat: perl modulok fejlesztése és rendszerbe integrálása</li>
-				</ul>
-
-                <h2 class="page-break">Cam-el-com Kft. <span>( 2008. június - 2010. május )</span></h2>
-                <ul>
-					<li>Beosztás: fejlesztő, rendszergazda</li>
-					<li>Feladat: egyedi szoftverfejlesztés, hálózatépítés, webfejlesztés</li>
-				</ul>
-
-				<h2>Nokia Siemens Networks <span>( 2009. február - 2009. június )</span></h2>
-                <ul>
-					<li>Beosztás: kooperatív képzés keretében gyakornok</li>
-					<li>Feladat: mobil kapcsolóközpont szoftverének tesztelése és analizálása</li>
-				</ul>
-            </dd>
-
-            <dd class="clear"></dd>
-
-            <dt style="height:620px">Szakmai ismeretek</dt>
-            <dd>
-                <h2>Javascript <span>( haladó )</span></h2>
-                <p>NodeJS, ajax, kliens oldali widgetek, animációk, jQuery</p>
-                
-            	<h2>Perl <span>( haladó )</span></h2>
-				<p>Honlapmotor fejlesztés, nagyobb projektek ( 50 000 sor )</p>
-
-				<h2>Linux <span>( haladó )</span></h2>
-				<p>6 év gyakorlat, Gentoo, Debian és CentOs ismeretek, bash programozás</p>
-
-				<h2>iPhone, Android fejlesztési ismeretek <span>( haladó )</span></h2>
-				<p>Titanium keretrendszer ismeretek</p>
-
-                <h2>Python <span>( középhaladó )</span></h2>
-                <p>Django keretrendszer</p>
-
-                <h2>PHP <span>( középhaladó )</span></h2>
-
-				<h2>Egyéb szakmai ismeretek</h2>
-				<ul>
-					<li>Általános hálózati ismeretek</li>
-					<li>Hardver ismeretek</li>
-					<li>Mobil szakirányú ismeretek</li>
-                    <li>Verziókezelő rendszerek (Git)</li>
-					<li>Biztonságtechnikai ismeretek</li>
-					<li>Windows és Macintosh felhasználói ismeretek</li>
-				</ul>
-            </dd>
-
-            <dd class="clear"></dd>
-
-            <dt>Nyelvismeret</dt>
-            <dd>
-                <h2>Angol középfokú C típusú nyelvvizsga <span>( 2005 )</span></h2>
-
-                <h2>Német alapszintű</h2>
-            </dd>
-
-            <dd class="clear"></dd>
-
-            <dt>Egyéb ismeretek, tevékenységek</dt>
-            <dd>
-            	<ul>
-            		<li>B kategóriás gépkocsivezetői jogosítvány ( 2005 )</li>
-					<li>Latex és dokumentáció készítési ismeretek</li>
-					<li>Rafting, Gocart, Squash</li>
-            	</ul>
-            </dd>
-
-			<dt>Tulajdonságok, érdeklődési kör</dt>
-            <dd>
-            	<p>Rendkívül gyorsan tanulok, és minden új információra nyitottnak és nagyon jó probléma megoldónak tartom magam. Szeretem az egyedi és különlegesen érdekes dolgokat.</p>
-            </dd>
-
-            <dd class="clear">
-            </dd>
-        </dl>
-    </div>
-</body>
-
+		<script type="text/javascript" src="jquery-1.10.1.min.js"></script>
+		<script type="text/javascript" src="cv.js"></script>
+	</body>
 </html>
