@@ -222,6 +222,15 @@ body {
 	color: #000 !important;
 }
 
+.email, .email:visited {
+	color: #2185C1;
+	text-decoration: none;
+}
+
+.email:hover {
+	text-decoration: underline;
+}
+
 @media print {
 	.lifeEvent {
 		page-break-inside: avoid;
@@ -234,5 +243,10 @@ body {
 
 	.social-icons {
 		display: none;
+	}
+
+	body: {
+		zoom: 60%;
+		-moz-transform: scale(0.6);
 	}
 }
