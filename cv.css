@@ -187,7 +187,6 @@ body {
 	margin-left: 30px;
 	margin-top: 50px;
 	width: 750px;
-	height: 150px;
 	font-size: 14px;
 }
 
@@ -243,10 +242,5 @@ body {
 
 	.social-icons {
 		display: none;
-	}
-
-	body: {
-		zoom: 60%;
-		-moz-transform: scale(0.6);
 	}
 }
