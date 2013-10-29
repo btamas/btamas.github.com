@@ -75,13 +75,17 @@ body {
 
 .timelineDot {
 	position: absolute;
-	top: -1px;
-	left: -13px;
+	top: -2px;
+	left: -14px;
 	border-radius: 100%;
 	width: 13px;
 	height: 13px;
-	background-color: red;
 	border: 5px solid white;
+}
+
+.timelineDot div {
+	border: 7px solid red;
+	border-radius: 100%;
 }
 
 .eventTitle {
@@ -111,8 +115,8 @@ body {
 	clear: both;
 }
 
-.orange .timelineDot {
-	background-color: #FFB900;
+.orange .timelineDot div {
+	border-color: #FFB900;
 }
 
 .orange .eventPosition {
@@ -123,8 +127,8 @@ body {
 	border-left: 4px solid #FFB900;
 }
 
-.red .timelineDot {
-	background-color: #F2383B;
+.red .timelineDot div {
+	border-color: #F2383B;
 }
 
 .red .eventPosition {
@@ -135,8 +139,8 @@ body {
 	border-left: 4px solid #F2383B;
 }
 
-.green .timelineDot {
-	background-color: #98C917;
+.green .timelineDot div {
+	border-color: #98C917;
 }
 
 .green .eventPosition {
@@ -147,8 +151,8 @@ body {
 	border-left: 4px solid #98C917;
 }
 
-.blue .timelineDot {
-	background-color: #2185C1;
+.blue .timelineDot div {
+	border-color: #2185C1;
 }
 
 .blue .eventPosition {
@@ -159,8 +163,8 @@ body {
 	border-left: 4px solid #2185C1;
 }
 
-.purple .timelineDot {
-	background-color: #D4298F;
+.purple .timelineDot div {
+	border-color: #D4298F;
 }
 
 .purple .eventPosition {
