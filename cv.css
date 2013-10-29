@@ -191,6 +191,28 @@ body {
 	margin-bottom: 5px;
 }
 
+.social-icons {
+	float: left;
+	padding: 10px 0 0 30px;
+}
+
+.facebook, .facebook:visited {
+	color: #3B5998;
+}
+
+
+.linkedin, .linkedin:visited {
+	color: #4875B4;
+}
+
+.twitter, .twitter:visited {
+	color: #33CCFF;
+}
+
+.github, .github:visited {
+	color: #000;
+}
+
 @media print {
 	.lifeEvent {
 		page-break-inside: avoid;
@@ -199,5 +221,9 @@ body {
 	.eventLongDescription {
 		display: block !important;
 		height: auto !important;
+	}
+
+	.social-icons {
+		display: none;
 	}
 }
