@@ -40,6 +40,10 @@ body {
 	max-width: 900px;
 }
 
+.lifeEvent:hover .eventDate, .lifeEvent:hover .eventTitle, .lifeEvent:hover .eventPosition {
+	font-weight: 700 !important;
+}
+
 .eventDate {
 	position: absolute;
 	top: 0px;
@@ -88,6 +92,7 @@ body {
 .eventPosition {
 	font-weight: 600;
 	float: left;
+	cursor: pointer;
 }
 
 .eventDescription {
@@ -196,21 +201,25 @@ body {
 	padding: 10px 0 0 30px;
 }
 
-.facebook, .facebook:visited {
-	color: #3B5998;
+.social-icons a, .social-icons a:visited {
+	color: #888;
+}
+
+.facebook:hover {
+	color: #3B5998 !important;
 }
 
 
-.linkedin, .linkedin:visited {
-	color: #4875B4;
+.linkedin:hover {
+	color: #4875B4 !important;
 }
 
-.twitter, .twitter:visited {
-	color: #33CCFF;
+.twitter:hover {
+	color: #33CCFF !important;
 }
 
-.github, .github:visited {
-	color: #000;
+.github:hover {
+	color: #000 !important;
 }
 
 @media print {

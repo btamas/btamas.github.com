@@ -1,5 +1,5 @@
 $(function(){
-	$(".eventTitle").click(function(){
+	$(".eventTitle, .eventPosition").click(function(){
 
 		$(".eventLongDescription")
 			.not(
