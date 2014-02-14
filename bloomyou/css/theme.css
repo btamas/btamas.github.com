@@ -9,6 +9,7 @@ body {
 	font-weight: 600;
 	margin: 0;
 	padding: 0;
+	position: relative;
 }
 
 p {
@@ -44,7 +45,7 @@ a, a:hover, a:active {
 }
 
 #page2 {
-	margin-left: 1790px;
+	margin-left: 10000px;
 	width: 980px;
 }
 
@@ -164,11 +165,11 @@ a, a:hover, a:active {
 
 #footer {
 	position: absolute;
-	top: 990px;
 	color: #AAA;
 	background-color: rgba(21,21,21,0.8);
 	border-top: 3px solid #909090;
-	min-height: 145px
+	bottom: 0px;
+	font-size: 16px;
 }
 
 #footer .column {
@@ -205,7 +206,7 @@ a, a:hover, a:active {
 }
 
 #arrowLeft {
-	position: fixed;
+	position: absolute;
 	top: 50%;
 	left: 10px;
 	margin-top: -74px;
@@ -213,7 +214,7 @@ a, a:hover, a:active {
 }
 
 #arrowRight {
-	position: fixed;
+	position: absolute;
 	top: 50%;
 	right: 10px;
 	margin-top: -74px;
@@ -223,7 +224,7 @@ a, a:hover, a:active {
 	border-bottom: 2px solid #909090;
 	text-align: left;
 	line-height: 25px;
-	padding: 30px 0;
+	padding: 25px 0;
 }
 
 .bulletBox.first {
@@ -231,7 +232,7 @@ a, a:hover, a:active {
 }
 
 .bulletBox.last {
-	margin-bottom: 20px;
+	margin-bottom: 30px;
 }
 
 .bulletBox p {
