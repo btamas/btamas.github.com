@@ -98,15 +98,19 @@
 				$( "#arrowRight" ).click( function() {
 					$(this).hide();
 					$( "#arrowLeft" ).show();
-					$( "#page1" ).animate({"margin-left": -10000}, "slow");
-					$( "#page2" ).animate({"margin-left": -445}, "slow");
+					$( "#page1" ).animate({"margin-left": -3000}, "slow", function() {
+						$(this).hide();
+					});
+					$( "#page2" ).show().animate({"margin-left": -445}, "slow");
 				} );
 
 				$( "#arrowLeft" ).click( function() {
 					$(this).hide();
 					$( "#arrowRight" ).show();
-					$( "#page1" ).animate({"margin-left": -210}, "slow" );
-					$( "#page2" ).animate({"margin-left": 10000}, "slow" );
+					$( "#page1" ).show().animate({"margin-left": -210}, "slow");
+					$( "#page2" ).animate({"margin-left": 3000}, "slow", function() {
+						$(this).hide();
+					});
 				} );
 			} );
 		</script>

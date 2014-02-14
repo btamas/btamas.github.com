@@ -45,8 +45,9 @@ a, a:hover, a:active {
 }
 
 #page2 {
-	margin-left: 10000px;
+	margin-left: 3000px;
 	width: 980px;
+	display: none;
 }
 
 #screenshot {
