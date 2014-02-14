@@ -22,18 +22,35 @@ a, a:hover, a:active {
 	color: #505050;
 }
 
-#content {
-	position: absolute;
+.content {
 	background-color: rgba(255,255,255,0.7);
 	width: 420px;
 	height: 720px;
-	left: 50%;
-	margin-left: -210px;
-	top: 120px;
 	border-radius: 10px;
 	box-shadow: 3px 0px 3px #CCC;
 	padding : 30px;
 	text-align: center;
+	float: left;
+}
+
+.page {
+	position: absolute;
+	left: 50%;
+	top: 120px;
+}
+
+#page1 {
+	margin-left: -210px;
+}
+
+#page2 {
+	margin-left: 1790px;
+	width: 980px;
+}
+
+#screenshot {
+	float: left;
+	margin-left: 20px;
 }
 
 #welcomeText {
@@ -122,8 +139,8 @@ a, a:hover, a:active {
 }
 
 .downloadBox {
-	border-top: 2px solid #505050;
-	border-bottom: 2px solid #505050;
+	border-top: 2px solid #909090;
+	border-bottom: 2px solid #909090;
 	margin-top: 35px;
 	padding: 25px 0;
 }
@@ -150,7 +167,8 @@ a, a:hover, a:active {
 	top: 990px;
 	color: #AAA;
 	background-color: rgba(21,21,21,0.8);
-	border-top: 3px solid #505050;
+	border-top: 3px solid #909090;
+	min-height: 145px
 }
 
 #footer .column {
@@ -161,8 +179,8 @@ a, a:hover, a:active {
 }
 
 #footer .borderColumn {
-	border-right: 3px solid #505050;
-	border-left: 3px solid #505050;
+	border-right: 3px solid #909090;
+	border-left: 3px solid #909090;
 }
 
 #footer .column p {
@@ -184,4 +202,49 @@ a, a:hover, a:active {
 	right: 60px;
 	width: 120px;
 	height: 60px;
+}
+
+#arrowLeft {
+	position: fixed;
+	top: 50%;
+	left: 10px;
+	margin-top: -74px;
+	display: none;
+}
+
+#arrowRight {
+	position: fixed;
+	top: 50%;
+	right: 10px;
+	margin-top: -74px;
+}
+
+.bulletBox {
+	border-bottom: 2px solid #909090;
+	text-align: left;
+	line-height: 25px;
+	padding: 30px 0;
+}
+
+.bulletBox.first {
+	margin-top: 110px;
+}
+
+.bulletBox.last {
+	margin-bottom: 20px;
+}
+
+.bulletBox p {
+	margin-left: 50px;
+	position: relative;
+}
+
+.bullet {
+	background: url(../images/bullet_flower.png);
+	display: block;
+	width: 106px;
+	height: 106px;
+	position: absolute;
+	left: -80px;
+	top: -40px;
 }
