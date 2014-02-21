@@ -25,7 +25,6 @@
 			$(function(){
 				var start = {};
 				$("#imageBox").on("touchstart", function(e) {
-					console.log("st");
 					var touch = e.originalEvent.touches[0] || e.originalEvent.changedTouches[0];
 					start.mouseX = touch.pageX;
 					start.mouseY = touch.pageY;
@@ -36,10 +35,21 @@
 					start.imageX = start.mouseX - start.posX;
 					start.imageY = start.mouseY - start.posY;
 					start.image = $(this).find("img");
+					start.boxWidth = 2* Math.max( start.imageW - start.imageX, start.imageX );
+					start.boxHeight = 2* Math.max( start.imageH - start.imageY, start.imageY );
+					start.distanceX = start.boxWidth / 2 - start.imageX;
+					start.distanceY = start.boxHeight / 2 - start.imageY;
+					
+					//set boxSize
+					$(this).css("width",start.boxWidth);
+					$(this).css("height",start.boxHeight);
+
+					//position image
+					start.image.css("margin-left", start.distanceX);
+					start.image.css("margin-top", start.distanceY);
 				});
 				
 				$("#imageBox").on("touchmove",function(e){
-					console.log("tm");
 					var touch = e.originalEvent.touches[0] || e.originalEvent.changedTouches[0],
 						mouseX = touch.pageX,
 						mouseY = touch.pageY,
@@ -50,31 +60,17 @@
 					
 					if ( rotate > maxRotate ) { rotate = maxRotate;}
 					if ( start.imageY > start.imageH/2 ) { rotate = -rotate;}
-					var boxWidth = 2* Math.max( start.imageW - start.imageX, start.imageX );
-					var boxHeight = 2* Math.max( start.imageH - start.imageY, start.imageY );
-					var distanceX = boxWidth / 2 - start.imageX;
-					var distanceY = boxHeight / 2 - start.imageY;
+					
 					
 					//set position
-					$(this).css("margin-left", mouseX - start.mouseX - distanceX);
-					$(this).css("margin-top", mouseY - start.mouseY - distanceY);
+					$(this).css("margin-left", mouseX - start.mouseX - start.distanceX);
+					$(this).css("margin-top", mouseY - start.mouseY - start.distanceY);
 					
 					//rotate
 					$(this).css("-webkit-transform", "rotate(" + rotate + "deg)");
 
-					//set boxSize
-					$(this).css("width",boxWidth);
-					$(this).css("height",boxHeight);
-
-					//position image
-					start.image.css("margin-left", distanceX);
-					start.image.css("margin-top", distanceY);
-
-				
 					e.preventDefault();
 					return true;
-				
-					//console.log( rotate );
 				});
 				
 				$("#imageBox").on("touchend", function(){
