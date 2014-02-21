@@ -25,6 +25,7 @@
 			$(function(){
 				var start = {};
 				$("#imageBox").on("touchstart", function(e) {
+					console.log("st");
 					var touch = e.originalEvent.touches[0] || e.originalEvent.changedTouches[0];
 					start.mouseX = touch.pageX;
 					start.mouseY = touch.pageY;
@@ -38,6 +39,7 @@
 				});
 				
 				$("#imageBox").on("touchmove",function(e){
+					console.log("tm");
 					var touch = e.originalEvent.touches[0] || e.originalEvent.changedTouches[0],
 						mouseX = touch.pageX,
 						mouseY = touch.pageY,
@@ -75,6 +77,7 @@
 				});
 				
 				$("#imageBox").on("touchend", function(){
+					console.log("te");
 					$(this).css("-webkit-transform", "rotate(0deg)");
 					$(this).css("margin", 0);
 					$(this).css("width", start.imageW);
