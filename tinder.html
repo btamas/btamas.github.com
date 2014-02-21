@@ -45,34 +45,34 @@
 						mouseY = touch.pageY,
 						image = $(this).find(image),
 						maxRotate = 10,
-						maxDistance = 300;
-						console.log("1");
-					var rotate = ( mouseX - start.mouseX ) * maxRotate / maxDistance;
+						maxDistance = 300,
+						rotate = ( mouseX - start.mouseX ) * maxRotate / maxDistance;
+					
 					if ( rotate > maxRotate ) { rotate = maxRotate;}
 					if ( start.imageY > start.imageH/2 ) { rotate = -rotate;}
-					console.log("2");
 					var boxWidth = 2* Math.max( start.imageW - start.imageX, start.imageX );
 					var boxHeight = 2* Math.max( start.imageH - start.imageY, start.imageY );
-					console.log("3");
 					var distanceX = boxWidth / 2 - start.imageX;
 					var distanceY = boxHeight / 2 - start.imageY;
 					
-					console.log("4");
 					//set position
 					$(this).css("margin-left", mouseX - start.mouseX - distanceX);
 					$(this).css("margin-top", mouseY - start.mouseY - distanceY);
 					
 					//rotate
 					$(this).css("-webkit-transform", "rotate(" + rotate + "deg)");
-					console.log("5");
+
 					//set boxSize
 					$(this).css("width",boxWidth);
 					$(this).css("height",boxHeight);
-					console.log("6");
+
 					//position image
 					start.image.css("margin-left", distanceX);
 					start.image.css("margin-top", distanceY);
-					console.log("7");
+
+				
+					e.preventDefault();
+					return true;
 				
 					//console.log( rotate );
 				});
