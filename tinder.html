@@ -39,14 +39,13 @@
 				});
 				
 				$("#imageBox").on("touchmove",function(e){
-					console.log("tm");
+					console.log("st");
 					var touch = e.originalEvent.touches[0] || e.originalEvent.changedTouches[0],
 						mouseX = touch.pageX,
 						mouseY = touch.pageY,
 						image = $(this).find(image),
 						maxRotate = 10,
 						maxDistance = 300;
-					http://www.scrapdis.com/profile-pics/profile-pictures/girls-profile-pics/selected/Profile-picture04.jpg
 					var rotate = ( mouseX - start.mouseX ) * maxRotate / maxDistance;
 					if ( rotate > maxRotate ) { rotate = maxRotate;}
 					if ( start.imageY > start.imageH/2 ) { rotate = -rotate;}
@@ -77,7 +76,6 @@
 				});
 				
 				$("#imageBox").on("touchend", function(){
-					console.log("te");
 					$(this).css("-webkit-transform", "rotate(0deg)");
 					$(this).css("margin", 0);
 					$(this).css("width", start.imageW);
