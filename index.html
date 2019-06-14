@@ -1,75 +1,21 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    <template id="cv-template">
-      <main>
-        <template data-partial="header"></template>
-        <template data-partial="socials"></template>
-      </main>
-    </template>
-    <template id="header-template">
-      <header><span data-value="name"></span>'s career timeline</header>
-    </template>
-    <template id="socials-template">
-      <section class="socials">
-        <template data-partial="social" data-partial-value="social"></template>
-      </section>
-    </template>
-    <template id="social-template">
-      <a class="social-link" data-href="page" target="_blank">
-        <i class="icon"><span data-value="name"></span></i>
-      </a>
-    </template>
-  </head>
-  <body>
-    <script type="text/javascript">
-      const loadCV = async () => {
-        const response = await fetch("/cv.json");
-        return response.json();
-      };
-      const render = (name, data) => {
-        console.log(`render ${name} with ${JSON.stringify(data)}`);
-        const template = document
-          .getElementById(`${name}-template`)
-          .content.cloneNode(true);
-        template.querySelectorAll("template[data-partial]").forEach(partial => {
-          const partialValueName = partial.getAttribute("data-partial-value");
-          const partialValue = partialValueName ? data[partialValueName] : data;
-          const partialArrayValue = Array.isArray(partialValue)
-            ? partialValue
-            : [partialValue];
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    </head>
+    <body>
+        <script type="text/javascript" src="/templateRenderer.js"></script>
+        <script type="text/javascript">
+            const loadCV = async () => {
+                const response = await fetch('/cv.json');
+                return response.json();
+            };
 
-          partial.replaceWith(
-            partialArrayValue.reduce((fragment, value) => {
-              fragment.appendChild(
-                render(partial.getAttribute("data-partial"), value)
-              );
-              return fragment;
-            }, new DocumentFragment())
-          );
-        });
-        template.querySelectorAll("[data-value]").forEach(value => {
-          value.innerText = data[value.getAttribute("data-value")];
-          value.removeAttribute("data-value");
-        });
-
-        for (let element of template.children) {
-          element.getAttributeNames().forEach(attribute => {
-            if (attribute.startsWith("data-")) {
-              const attributeName = attribute.substr(5);
-              const attributeValueName = element.getAttribute(attribute);
-              element.setAttribute(attributeName, data[attributeValueName]);
-              element.removeAttribute(attribute);
-            }
-          });
-        }
-        return template;
-      };
-
-      loadCV().then(cv => {
-        document.body.appendChild(render("cv", cv));
-      });
-    </script>
-  </body>
+            const templateRenderer = new TemplateRenderer('/templates');
+            fetch('/cv.json')
+                .then(response => response.json())
+                .then(cv => templateRenderer.render('cv', cv))
+                .then(cvContent => document.body.appendChild(cvContent));
+        </script>
+    </body>
 </html>
