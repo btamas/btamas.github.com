@@ -6,11 +6,6 @@
     <body>
         <script type="text/javascript" src="/templateRenderer.js"></script>
         <script type="text/javascript">
-            const loadCV = async () => {
-                const response = await fetch('/cv.json');
-                return response.json();
-            };
-
             const templateRenderer = new TemplateRenderer('/templates');
             fetch('/cv.json')
                 .then(response => response.json())
